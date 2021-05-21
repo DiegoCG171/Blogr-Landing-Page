@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+:root{
+    font-size: 16px;
+    --color-background-hover-CTA: hsla(355, 100%, 74%, 1);
+    --color-background-footer: hsl(240, 10%, 16%);
+    --color-background-light-red: hsla(13, 100%, 72%, 1);
+    --color-background-red: hsla(353, 100%, 62%, 1);
+    --color-background-blue: hsla(237, 17%, 21%, 1);
+    --color-background-desaturated-blue: hsl(237, 23%, 32%);
+    --color-text-CTA: hsla(356, 100%, 66%, 1);
+    --color-text-headings: hsla(208, 49%, 24%, 1);
+    --color-text-white: hsla(0, 0%, 100%, 1);
+    --color-text-footer: hsla(240, 2%, 79%, 1);
+    --color-br: hsla(240, 2%, 79%, 0.6);
+    --color-text-body-copy: hsla(207, 13%, 34%, 1);
+    --color-shadow: hsla(237, 23%, 32%, 0.5);
+
+    // Font Family
+    --font-family-overpass: 'Overpass', sans-serif;
+    --font-family-ubuntu: 'Ubuntu', sans-serif;
+
+    // Font Size
+    --font-size-title: 2.3em;
+    --font-size-sub-title: 1.2em;
+    
+    // Font Weight
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semi-bold: 600;
+    --font-weight-bold: 700;
+    
+    @media (min-width: 960px) {
+        --font-size-title: 3.5em;
+        --font-size-sub-title: 1.2em;    
+    }
+}

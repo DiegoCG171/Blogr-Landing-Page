@@ -1,0 +1,83 @@
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(var(--color-background-light-red) 0%, var(--color-background-red) 80%);
+    border-bottom-left-radius: 6em;
+    height: 90vh;
+    overflow: hidden;
+    z-index: 1;
+
+    &__ilustration {
+        background-image: url("https://res.cloudinary.com/dmfhnhyyj/image/upload/v1621302070/blogr/bg-pattern-intro_fgolzn.svg");
+        background-size: 370%;
+        background-position: 35% 36%;
+        background-repeat: no-repeat;
+        position: relative;
+        height: 100%;
+        z-index: 1;
+    }
+
+    &__container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        top: 0;
+        justify-content: center;
+        width: 100%;
+        z-index: 1;
+    }
+
+    &__header {
+        &-title,
+        &-sub-title {
+            color: var(--color-text-white);
+            font-family: var(--font-family-overpass);
+            margin-bottom: 24px;
+            text-align: center;
+            line-height: 1.3em;
+        }
+        
+        &-title {
+            font-size: var(--font-size-title);
+            font-weight: var(--font-weight-semi-bold);
+        }
+
+        &-sub-title {
+            font-size: var(--font-size-sub-title);
+            font-weight: var(--font-weight-light);
+        }
+
+    }
+
+    &__buttons{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 2em;
+        width: 100%;
+    }
+}
+
+@media (min-width: 960px) {
+    .hero-section {
+        border-bottom-left-radius: 6em;
+        background-image: linear-gradient(
+            to right,
+            var(--color-background-light-red) 0%,
+            var(--color-background-red) 80%
+        );
+        height: 100vh;
+
+        &__ilustration {
+            background-size: 240%;
+            background-position: 26% 54%;
+        }
+    
+        &__buttons{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 2em;
+            width: 35%;
+        }
+    }
+}
