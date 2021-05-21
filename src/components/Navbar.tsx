@@ -4,9 +4,12 @@ import { HamburgerIcon } from './HamburgerIcon';
 import { CloseIcon } from './CloseIcon'
 import { Button } from "./Button";
 import { NavbarItem } from './NavbarItem';
-import { dataNavbar } from '../data/dataNavbar'
+import { dataNavbar } from '../data/dataNavbar';
+
 
 export const Navbar = () => {
+
+    const screenWidth = window.innerWidth;
 
     const [menuClick, setMenuClick] = useState<boolean>(false);
     const [clickedNavItem, setClickedNavItem] = useState<number | null>(null);
@@ -51,7 +54,7 @@ export const Navbar = () => {
                             <span className='navbar__option'>Login</span>
                         </li>
                         <li className='navbar__item' >
-                            <Button title='Sing Up' buttonStyle='gradient' />
+                            <Button title='Sing Up' buttonStyle={ screenWidth <= 960 ? 'gradient' : 'primary'} />
                         </li>
                     </ul>
                 </div>

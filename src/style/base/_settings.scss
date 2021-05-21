@@ -22,7 +22,8 @@
 
     // Font Size
     --font-size-title: 2.3em;
-    --font-size-sub-title: 1.2em;
+    --font-size-sub-title: 1.8em;
+    --font-size-hero-description: 1.2em;
     
     // Font Weight
     --font-weight-light: 300;
@@ -32,7 +33,8 @@
     --font-weight-bold: 700;
     
     @media (min-width: 960px) {
+        // Font Size
         --font-size-title: 3.5em;
-        --font-size-sub-title: 1.2em;    
+        --font-size-sub-title: 2.5em;    
     }
 }
