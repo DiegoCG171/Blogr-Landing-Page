@@ -1,0 +1,51 @@
+
+.footer {
+    align-items: center;
+    background-color: var(--color-background-footer);
+    border-top-right-radius: 6em;
+    display: flex;
+    flex-direction: column;
+    margin-top: 8em;
+    padding-top: 5em;
+    padding-bottom: 5em;
+
+    &__column {
+        padding-top: 4em;
+    }
+
+    &__title, 
+    &__link {
+        color: var(--color-text-footer);
+        font-family: var(--font-family-ubuntu);
+        padding: 0.5em 0;
+        text-align: center;
+    }
+
+    &__title {
+        font-weight: var(--font-weight-bold);
+        font-size: 18px;
+        margin-bottom: 1.5em;
+    }
+
+    &__link {
+        font-weight: var(--font-weight-light);
+    }
+}
+
+@media (min-width: 960px ) {
+    .footer {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+
+        &__link {
+
+            &:hover {
+                cursor: pointer;
+                text-decoration-color: var(--color-text-footer);
+                text-decoration-line: underline;
+            }
+        }
+
+    }
+}
