@@ -1,0 +1,91 @@
+.mid-section {
+    background-image: url("https://res.cloudinary.com/dmfhnhyyj/image/upload/v1621636728/blogr/bg-pattern-circles_ibdj0l.svg"),
+        linear-gradient(to bottom, var(--color-background-blue), var(--color-background-desaturated-blue));
+    background-position: 50% -40vh, 0%;
+    background-size: 160%, 100%;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 6em;
+    border-top-right-radius: 6em;
+    height: 90vh;
+    margin-top: 8em;
+    margin-bottom: 8em;
+
+    &__ilustration {
+        background-image: url("https://res.cloudinary.com/dmfhnhyyj/image/upload/v1621573510/blogr/illustration-phones_va9gnf.svg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 55%;
+        position: relative;
+        top: -10em;
+    }
+
+    &__data {
+        margin-top: -5em;
+    }
+
+    &__title,
+    &__paragraph {
+        color: var(--color-text-white);
+        font-family: var(--font-family-overpass);
+        line-height: 1.5em;
+        text-align: center;
+    }
+
+    &__title {
+        font-weight: var(--font-weight-bold);
+        font-size: var(--font-size-title);
+    }
+
+    &__paragraph {
+        line-height: 1.8em;
+        margin-top: 1em;
+        padding: 0 0.8em;
+    }
+}
+
+@media (min-width: 960px) {
+    .mid-section {
+        display: flex;
+        flex-direction: row;
+        height: 50vh;
+        width: 100%;
+
+        &__ilustration {
+            background-image: url("https://res.cloudinary.com/dmfhnhyyj/image/upload/v1621573510/blogr/illustration-phones_va9gnf.svg");
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;
+            height: 200%;
+            position: relative;
+            top: -13em;
+            width: 50%;
+            z-index: 100;
+        }
+
+        &__data {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            margin-top: 0;
+            width: 50%;
+            justify-content: center;
+        }
+
+        &__title,
+        &__paragraph {
+            text-align: start;
+        }
+
+        &__title {
+            font-weight: var(--font-weight-bold);
+            font-size: var(--font-size-sub-title);
+        }
+
+        &__paragraph {
+            line-height: 1.8em;
+            margin-top: 1em;
+            padding: 0 0.8em;
+        }
+    }
+}

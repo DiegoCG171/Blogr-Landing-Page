@@ -18,7 +18,9 @@ export const InfoSection = ({
 
     return (
         <section className='Info-section wrapper'>
-            <h2 className='Info-section__title' >{title}</h2>
+            {
+                title && <h2 className='Info-section__title' >{title}</h2> 
+            }
             <div className='Info-section__container' style={ (screenWidth >= 960 && imgDirection !== 'rigth' ) ? { flexDirection: 'row-reverse' } : {}} >
                 <img
                     className={ `Info-section__ilustration ${ imgDirection === 'rigth' ? 'img-rigth' : 'img-left' }` }
